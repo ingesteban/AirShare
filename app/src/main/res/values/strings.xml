@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Air Share</string>
+
+    <string name="grant_access_title">Grant Access</string>
+    <string name="grant_access_description">Air Share needs access\nto your Storage. (required)</string>
+    <string name="grant_access_continue_button">Continue</string>
+    <string name="grant_access_quit_button">Quit</string>
+
+    <string name="menu_send">Send</string>
+    <string name="menu_receive">Receive</string>
+    <string name="menu_history">History</string>
+
+    <string name="tab_recent">Recent</string>
+    <string name="tab_photos">Photos</string>
+    <string name="tab_videos">Videos</string>
+    <string name="tab_audio">Audios</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_files">Files</string>
+
+    <string name="internal_storage">Internal Storage</string>
+
+    <plurals name="numberOfItems">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <string name="snack_bar_">SnackBar</string>
+    <string name="send_button">SEND</string>
+    <string name="receive_button">Receive</string>
+
+    <string name="selected_items" formatted="false">%d Selected</string>
+
+
+</resources>

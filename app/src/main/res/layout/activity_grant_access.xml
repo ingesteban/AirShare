@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".presentation.grant_access.GrantAccessActivity">
+
+    <TextView
+        android:id="@+id/grantAccessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:text="@string/grant_access_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/phoneImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/lockImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grantAccessTitle"
+        app:srcCompat="@drawable/ic_phone_device" />
+
+    <View
+        android:id="@+id/circleOne"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_primary_dark_fill"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneImage"
+        app:layout_constraintStart_toEndOf="@+id/phoneImage"
+        app:layout_constraintTop_toTopOf="@+id/phoneImage" />
+
+    <View
+        android:id="@+id/circleTwo"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle_primary_dark_fill"
+        app:layout_constraintBottom_toBottomOf="@+id/circleThree"
+        app:layout_constraintStart_toEndOf="@+id/circleThree"
+        app:layout_constraintTop_toTopOf="@+id/circleThree" />
+
+    <View
+        android:id="@+id/circleThree"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle_primary_dark_fill"
+        app:layout_constraintBottom_toBottomOf="@+id/circleOne"
+        app:layout_constraintStart_toEndOf="@+id/circleOne"
+        app:layout_constraintTop_toTopOf="@+id/circleOne" />
+
+    <ImageView
+        android:id="@+id/lockImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phoneImage"
+        app:layout_constraintTop_toTopOf="@+id/phoneImage"
+        app:srcCompat="@drawable/ic_lock" />
+
+    <ImageView
+        android:id="@+id/keyLockImage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lockImage"
+        app:layout_constraintEnd_toEndOf="@+id/lockImage"
+        app:layout_constraintStart_toStartOf="@+id/lockImage"
+        app:srcCompat="@drawable/ic_key_lock" />
+
+    <TextView
+        android:id="@+id/grantAccessDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/grant_access_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneImage" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_primary_dark_fill"
+        android:textColor="@android:color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/grant_access_continue_button"
+        app:layout_constraintBottom_toTopOf="@+id/quitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_primary_dark_border"
+        android:text="@string/grant_access_quit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
